@@ -209,17 +209,7 @@ namespace Wording
             }
             Word[] sort(Word[] words)
             {
-                List<Word> res = new List<Word>();
-                List<string> wordo = new List<string>();
-                foreach (var v in words) wordo.Add(v.word);
-                wordo.Sort();
-                foreach (var w in wordo)
-                    foreach (var v in words)
-                        if (w == v.word)
-                        {
-                            res.Add(v);
-                            break;
-                        }
+                List<Word> res = words.OrderBy(s=> s.word).ToList();
                 return res.ToArray();
             }
 
