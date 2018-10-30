@@ -12,7 +12,7 @@ using System.Diagnostics;
 using System.IO;
 using My;
 
-namespace WindowsFormsApplication1
+namespace Wording
 {
     public partial class Form1 : Form
     {
