@@ -121,13 +121,7 @@ namespace Wording
                     }
                 }
                 return res;
-            }
-
-            public override string ToString()
-            {
-
-                return base.ToString();
-            }
+            }            
         }
         class Settings
         {
