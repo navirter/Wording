@@ -275,7 +275,8 @@ namespace Wording
                 string path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
                 textBox3.Text = File.ReadAllText(path + "\\last.txt", Encoding.GetEncoding(1251));
             }
-            catch { }
+            catch(Exception ee)
+            { MessageBox.Show(ee.Message, "Текст скопирован"); Clipboard.SetText(ee.Message); }
         }
 
         void close(object sender, EventArgs e)
